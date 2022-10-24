@@ -1,0 +1,38 @@
+<h1>Home</h1>
+{{a}}<br>
+{{b}}<br>
+{{c}}<br>
+{{d}}<br>
+<input type="text" [(ngModel)]="name"><br>
+<input type="button" (click)="printdata($event)" value="enter data"><br>
+Constructor: Document.GetElemetById test:
+<input type="text" id="twotest">
+<input type="button" value="Data" (click)="printtext($event)" id="twotest"><br>
+<span *ngIf="status else condition2">This is true</span>
+<ng-template #condition2>This is false</ng-template> <br>
+For loop:<br>
+<span *ngFor="let hero of heroes">{{heroes}}</span><br>
+{{emp1 | uppercase}}<br>
+{{emp2 | uppercase}}<br>
+{{emp3 | lowercase}}<br>
+{{todaydate}}<br>
+{{todaydate | date: 'd/M/y'}}<br>
+{{money | currency:'Euro'}}<br>
+{{perfomance|percent}}<br>
+<button (click)="getuserdata()">Get Data</button>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>name</th>
+        <th>Username</th>
+        <th>Email</th>
+    </tr> 
+    <tr *ngFor="let user of user">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+    <tr>
+
+    </tr>
+</table>

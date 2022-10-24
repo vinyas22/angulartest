@@ -1,0 +1,25 @@
+h1{
+    color: red;
+    text-align: center;
+}
+a:link:visited{
+    background-color: black;
+    color: beige;
+    
+}
+
+.home a{text-decoration: none;
+color: black;}
+.project{
+    display: flex;
+    
+}
+.detail{
+    
+    margin-left: 50px;
+}
+.detail a{
+    text-decoration: none;
+    color: black;
+    
+}
